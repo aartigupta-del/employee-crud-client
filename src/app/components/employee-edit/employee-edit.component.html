@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Edit Employee</h2>
+    <form [formGroup]="employeeForm" (ngSubmit)="updateEmployee()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="salary">Salary:</label>
+        <input type="number" class="form-control" id="salary" formControlName="salary">
+      </div>
+      <div class="form-group">
+        <label for="department">Department:</label>
+        <input type="text" class="form-control" id="department" formControlName="department">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
